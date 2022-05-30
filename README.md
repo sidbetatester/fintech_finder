@@ -7,9 +7,9 @@ This is a blockchain-based workforce hiring and payment system, using Streamlit 
 
 This project leverages python 3.7 with the following packages / IDEs:
 
-* [python] (https://wiki.python.org/moin/FrontPage) - is an object-oriented, interpreted, and interactive programming language.
+* [python](https://wiki.python.org/moin/FrontPage) - is an object-oriented, interpreted, and interactive programming language.
 
-* [streamlit] (https://streamlit.io/) - Streamlit is an open-source app framework for Machine Learning and Data Science teams.
+* [streamlit](https://streamlit.io/) - Streamlit is an open-source app framework for Machine Learning and Data Science teams.
 
 * [Visual Studio Code](https://code.visualstudio.com/?wt.mc_id=DX_841432) - Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. 
 
@@ -42,6 +42,7 @@ Please follow instructions from the below link to install python 3.7 or above on
 [To install Ganache, follow instructions from this link to download and install ](https://trufflesuite.com/ganache/)
 
 [To install Microsoft Visual C++ Build Tools in Windows(dependency for Web3.py in windows), follow instructions below](https://visualstudio.microsoft.com/downloads/)
+
     * [Go to](https://visualstudio.microsoft.com/downloads/)
     * Scroll down the page, and then click "Tools for Visual Studio 2019" to reveal the options.
     * Download the "Build Tools for Visual Studio 2019" package.
@@ -97,19 +98,28 @@ cd fintech_finder
 # 2. To launch the Streamlit application,type
 
 streamlit run fintech_finder.py
-```
-Note: to close Streamlit from gitbash, click ctrl + 'c'
 
 # 3. On the resulting webpage, select a candidate that you would like to hire from the appropriate drop-down menu. Then, enter the number of hours that you would like to hire them for. (Remember, you do not have a lot of ether in your account, so you cannot hire them for long!)
 
 # 4 Click the Send Transaction button to sign and send the transaction with your Ethereum account information. If the transaction is successfully communicated to Ganache, validated, and added to a block, a resulting transaction hash code will be written to the Streamlit application sidebar.
 
+```
+Note: to close Streamlit from gitbash, click ctrl + 'c'
+
+
+
    
 ## Screenshots
 
-![fintech_finder app - Screenshot of the address, balance, and transaction (TX) count from the Ganache accounts tab for account (index 0)](Images/fintech_finder_app.png)
+### fintech_finder app interface:
+
+![fintech_finder app](Images/fintech_finder_app.png)
+
+### Screenshot of the address, balance, and transaction (TX) count from the Ganache accounts tab for account (index 0):
 
 ![fintech_finder app - Screenshot of the address, balance, and transaction (TX) count from the Ganache accounts tab for account (index 0)](Images/account_index_0.png)
+
+### Screenshot of transaction from the Ganache transaction tab:
 
 ![fintech_finder app - Screenshot of transaction from the Ganache transaction tab](Images/transaction_screenshot.png)
 
