@@ -76,10 +76,9 @@ w3 = Web3(Web3.HTTPProvider('HTTP://127.0.0.1:7545'))
 # * `get_balance`
 # * `send_transaction`
 
-# @TODO:
-# From `crypto_wallet.py import the functions generate_account, get_balance,
-#  and send_transaction
-# YOUR CODE HERE
+from crypto_wallet import generate_account
+from crypto_wallet import get_balance
+from crypto_wallet import send_transaction
 
 ################################################################################
 # Fintech Finder Candidate Information
@@ -128,9 +127,7 @@ st.sidebar.markdown("## Client Account Address and Ethernet Balance in Ether")
 # `generate_account` function. This function will create the Fintech Finder
 # customer’s (in this case, your) HD wallet and Ethereum account.
 
-# @TODO:
-#  Call the `generate_account` function and save it as the variable `account`
-# YOUR CODE HERE
+account = generate_account()
 
 ##########################################
 
@@ -143,14 +140,11 @@ st.sidebar.write(account.address)
 # customer’s account. Inside this function, call the `get_balance` function and
 #  pass it your Ethereum `account.address`.
 
-# @TODO
-# Call `get_balance` function and pass it your account address
-# Write the returned ether balance to the sidebar
-# YOUR CODE HERE
+st.sidebar.write(get_balance(w3,address=account.address)
 
 ##########################################
 
-# Create a select box to chose a FinTech Hire candidate
+# Create a select box to choose a FinTech Hire candidate
 person = st.sidebar.selectbox('Select a Person', people)
 
 # Create a input field to record the number of hours the candidate worked
